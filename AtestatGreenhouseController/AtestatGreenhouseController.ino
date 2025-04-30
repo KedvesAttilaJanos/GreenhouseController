@@ -8,7 +8,7 @@
 #include <SoftwareSerial.h>
 #include <Vector.h>
 #include <avr/wdt.h>
-//github test
+//github test sdfghjkl
 //SoftwareSerial espSerial(10, 11); //rx,tx
 //Az eszközök csatlakoztatott tüskéi és az állandó értékek megadása, illetve a használandó objektumok deklarálása
 //Temp and humidity
