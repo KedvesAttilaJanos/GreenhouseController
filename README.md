@@ -1,5 +1,8 @@
 # 🌱 Smart Greenhouse Controller (IoT Project)
 
+📄 This README is available in multiple languages:
+🇭🇺 [Magyarul itt olvasható »](docs/README.hu.md)
+
 This project is a smart greenhouse controller built with Arduino and ESP8266 for monitoring and controlling various environmental factors in a greenhouse. The system collects data from multiple sensors and can be monitored remotely via a web interface.
 
 ## Features
@@ -11,6 +14,9 @@ This project is a smart greenhouse controller built with Arduino and ESP8266 for
 - **OLED Display** – Displays real-time data on temperature, humidity, soil moisture, and light intensity.
 - **Joystick** – Allows manual control for adjusting parameters such as watering or fan speed.
 - **Future Plans** – Adding CO2 monitoring capabilities.
+
+📄 Documentation
+The full project documentation is available in two languages (Hungarian and English) in the /docs folder. It includes hardware schematics, system overview, and usage instructions.
 
 ## Components
 - **Microcontroller:**
@@ -64,7 +70,6 @@ The project includes a 3D printed case to house the controller and sensors. This
 4. **Upload Code**:
    - Upload the code from `firmware/SmartGreenhouse.ino` to your Arduino using the Arduino IDE.
 
-
 ## Future Work
 1. **Integration of Additional Modules**
     Add CO2 sensor to monitor air quality.
@@ -86,11 +91,11 @@ The project includes a 3D printed case to house the controller and sensors. This
    Implementing a basic fault-tolerant system would be useful, such as using a watchdog (same used in the restart method) timer that restarts the system if it freezes or if no data is received within a certain time period. A logging feature for save errors or key events to an SD card.
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
+You are free to use, modify, and distribute this code, even in commercial projects, as long as you include the original license and credit the author.
 
 ## Contact
 If you have any questions or suggestions, feel free to contact me at:  
-[Your Email or GitHub Profile]
+ata.kedves@gmail.com
 
 ---
 
