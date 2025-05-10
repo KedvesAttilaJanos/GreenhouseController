@@ -43,7 +43,7 @@ A projekt tartalmaz egy egyedi PCB-t a melegház vezérlő számára. Az alábbi
 - **Áramköri diagram**: Az áramköri terv PDF formátumban elérhető: [PDF](docs/schematic.pdf) [SVG](Schematic.svg).
 
 **Vezetékek és összeszerelés:**
-- A vezetékek diagramja elérhető a `/Docs/wiring_diagram.png` alatt, amely bemutatja, hogyan kell csatlakoztatni a szenzorokat és a mikrokontrollert.
+- A vezetékek diagramja elérhető a `/docs/wiring_diagram.png` alatt, amely bemutatja, hogyan kell csatlakoztatni a szenzorokat és a mikrokontrollert.
 
 ## 3D Nyomtatott Tok
 A projekt tartalmaz egy 3D nyomtatott tokot a vezérlő és a szenzorok elhelyezésére. Ez a tok segít megvédeni az elektronikát, és tiszta, tartós megoldást biztosít az alkatrészek felszereléséhez.
