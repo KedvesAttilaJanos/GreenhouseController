@@ -1184,6 +1184,7 @@ void loop() {
     }
       
   }
+  //testeljuk le
   transmitDateOnEsp(constructDateString());
   readSensor();
   outRelays();
