@@ -3,13 +3,11 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-//#include <avr/pgmspace.h>
 #include <dht.h>
 #include <SoftwareSerial.h>
 #include <Vector.h>
 #include <avr/wdt.h>
-//github test sdfghjkl
-//SoftwareSerial espSerial(10, 11); //rx,tx
+
 //Az eszközök csatlakoztatott tüskéi és az állandó értékek megadása, illetve a használandó objektumok deklarálása
 //Temp and humidity
 #define dht1 3
@@ -614,114 +612,7 @@ void mainMenuSystem()// A menük kiírása, döntésekkel, hogy az adott menüpo
       display.println(buffer);
     }
       display.display();
-    /*switch(currentMenuNumber)
-    {
-      case 0:
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Device Owerview"));
-        display.setTextColor(WHITE);
-        display.println(F("Sensor Overview"));
-        display.println(F("Temperature Controll"));
-        display.println(F("Humidity Controll"));
-        display.println(F("Irrigation Controll"));
-        display.println(F("Light Controll"));
-        display.println(F("System Settings"));
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 1:
- 
-        display.println(F("Device Overview"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Sensor Overview"));
-        display.setTextColor(WHITE);
-        display.println(F("Temperature Controll"));
-        display.println(F("Humidity Controll"));
-        display.println(F("Irrigation Controll"));
-        display.println(F("Light Controll"));
-        display.println(F("System Settings"));
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 2: 
-        display.println(F("Device Overview"));
-        display.println(F("Sensor Overview"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Temperature Controll"));
-        display.setTextColor(WHITE);
-        display.println(F("Humidity Controll"));
-        display.println(F("Irrigation Controll"));
-        display.println(F("Light Controll"));
-        display.println(F("System Settings"));
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 3:
-        display.println(F("Device Overview"));
-        display.println(F("Sensor Overview"));
-        display.println(F("Temperature Controll"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Humidity Controll"));
-        display.setTextColor(WHITE);
-        display.println(F("Irrigation Controll"));
-        display.println(F("Light Controll"));
-        display.println(F("System Settings"));
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 4:
-        display.println(F("Device Overview"));
-        display.println(F("Sensor Overview"));
-        display.println(F("Temperature Controll"));
-        display.println(F("Humidity Controll"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Irrigation Controll"));
-        display.setTextColor(WHITE);
-        display.println(F("Light Controll"));
-        display.println(F("System Settings"));
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 5:
-        display.println(F("Device Overview"));
-        display.println(F("Sensor Overview"));
-        display.println(F("Temperature Controll"));
-        display.println(F("Humidity Controll"));
-        display.println(F("Irrigation Controll"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Light Controll"));
-        display.setTextColor(WHITE);
-        display.println(F("System Settings"));
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 6:
-        display.println(F("Device Overview"));
-        display.println(F("Sensor Overview"));
-        display.println(F("Temperature Controll"));
-        display.println(F("Humidity Controll"));
-        display.println(F("Irrigation Controll"));
-        display.println(F("Light Controll"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("System Settings"));
-        display.setTextColor(WHITE);
-        display.println(F("Network Settings"));
-        display.display();
-      break;
-      case 7:
-        display.println(F("Device Overview"));
-        display.println(F("Sensor Overview"));
-        display.println(F("Temperature Controll"));
-        display.println(F("Humidity Controll"));
-        display.println(F("Irrigation Controll"));
-        display.println(F("Light Controll"));
-        display.println(F("System Settings"));
-        display.setTextColor(BLACK,WHITE);
-        display.println(F("Network Settings"));
-        display.setTextColor(WHITE);
-        display.display();
-      break;
-    }*/
+    
   }
   else 
   {
@@ -1262,13 +1153,8 @@ void setup() // az indításkor fut le
   // Setup resz, az inditaskor egyszer fut le:
   Serial.begin(9600); //Soros Kommunikacio a teszteleshez
   Serial1.begin(115200);
-  //espSetup();
-  //espSerial.begin(9600);
   //meghívjuk a létrehozott függvényeket, amik az első lefutásnál kell végrehajtódjanak
-  //killAllDevices();
-  //zeroAllSensor();
   displayInitialize();
-  //zeroAllInternalVariable();
   //megadjuk a, hogy a tüskék funkcióját
   pinMode(JOYSTICK_BUTTON, INPUT_PULLUP);
   pinMode(FANPIN, OUTPUT);
@@ -1287,7 +1173,7 @@ void loop() {
     serialMonitorPrint();
   changeMenuNumber(isSubMenu,maxMenuCount);
   mainMenuSystem();
-  if(joystickButtonState == true) //isSubMenu == false && 
+  if(joystickButtonState == true) 
   {
     if(millis()-lastTimeChange > menuChangeIntervall)
     {
