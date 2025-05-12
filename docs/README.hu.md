@@ -40,7 +40,7 @@ A teljes projekt dokumentációja két nyelven (magyar és angol) elérhető a /
 ## PCB és Áramköri Tervek
 A projekt tartalmaz egy egyedi PCB-t a melegház vezérlő számára. Az alábbiakban találhatóak a PCB fájlok és az áramköri terv:
 - **PCB fájlok**: A PCB elrendezési fájlok (Gerber) a `/hardware/` mappában találhatók.
-- **Áramköri diagram**: Az áramköri terv PDF formátumban elérhető: [PDF](docs/schematic.pdf) [SVG](Schematic.svg).
+- **Áramköri diagram**: Az áramköri terv PDF formátumban elérhető: [PDF](docs/Schematic.pdf) [SVG](Schematic.svg).
 
 **Vezetékek és összeszerelés:**
 - A vezetékek diagramja elérhető a `/docs/wiring_diagram.png` alatt, amely bemutatja, hogyan kell csatlakoztatni a szenzorokat és a mikrokontrollert.
