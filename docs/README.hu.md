@@ -88,7 +88,7 @@ A projekt tartalmaz egy 3D nyomtatott tokot a vezérlő és a szenzorok elhelyez
    Hasznos lenne egy alapvető hibatűrő rendszer bevezetése, például egy figyelő (watchdog) időzítő alkalmazása, amely újraindítja a rendszert, ha az lefagy, vagy ha egy meghatározott időn belül nem érkezik adat. Egy naplózó funkció, amely tárolja a hibákat vagy fontos eseményeket SD kártyán.
 
 ## Licenc
-Ez a projekt a [MIT Licenc](LICENSE) alatt van licencelve.  
+Ez a projekt a [MIT Licenc](/LICENSE) alatt van licencelve.  
 Szabadon használhatod, módosíthatod és terjesztheted a kódot, még kereskedelmi projektekben is, amennyiben tartalmazza az eredeti licencet és tiszteletben tartja a szerző jogait.
 
 ## Kapcsolat
