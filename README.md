@@ -43,7 +43,7 @@ The full project documentation is available in two languages (Hungarian and Engl
 ## PCB and Schematics
 The project includes a custom PCB designed for the greenhouse controller. You can find the PCB files and the circuit schematic below:
 - **PCB Files**: The PCB layout files (Gerber) can be found in the `/hardware/` folder.
-- **Schematic Diagram**: The circuit schematic for the project is available as [PDF](docs/schematic.pdf) [SVG](Schematic.svg).
+- **Schematic Diagram**: The circuit schematic for the project is available as [PDF](docs/Schematic.pdf) [SVG](docs/Schematic.svg).
 
 **Wiring and Assembly**:
 - The wiring diagram is available under `/docs/wiring_diagram.png`, which illustrates how to connect the sensors and the microcontroller.
